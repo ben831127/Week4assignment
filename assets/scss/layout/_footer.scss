@@ -1,0 +1,162 @@
+.footer {
+  background: #aa0601;
+  font-size: 64px;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+  .ftnav {
+    display: flex;
+    font-size: 16px;
+    width: 464px;
+    justify-content: space-between;
+
+    a {
+      line-height: 1.5;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .iconnav {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    justify-content: space-between;
+
+    a {
+      display: flex;
+    }
+    img {
+      width: 48px;
+    }
+  }
+}
+
+.mid {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 32px;
+
+  .phone,
+  .mail {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #fff;
+      font-size: 36px;
+    }
+    a {
+      display: block;
+      color: #fff;
+      font-size: 36px;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+  }
+}
+
+.bottom {
+  width: 100%;
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 1.5;
+  border-top: 1px solid #fff;
+
+  .copyright {
+    color: #fff;
+  }
+  .policy {
+    display: flex;
+    li {
+      margin-left: 48px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  footer {
+    .container {
+      padding: 0px 36px;
+      margin: 0 auto;
+    }
+
+    .top {
+      .iconnav {
+        width: 152px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    width: 100%;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: first baseline;
+      padding: 0 12px;
+    }
+  }
+  .container {
+    .top {
+      width: auto;
+      padding: 24px 0;
+      .ftnav {
+        display: none;
+      }
+      .iconnav {
+        width: 88px;
+        img {
+          width: 24px;
+        }
+      }
+    }
+    .mid {
+      width: auto;
+      padding: 24px 0;
+      span {
+        font-size: 18px;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+    .bottom {
+      flex-direction: column;
+      padding-top: 16px;
+      padding-bottom: 24px;
+      .copyright {
+        width: 100%;
+        font-size: 16px;
+      }
+      .policy {
+        flex-direction: column;
+
+        li {
+          margin-left: 0;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
